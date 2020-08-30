@@ -1,0 +1,30 @@
+{
+  "name": "import-ponyfill",
+  "version": "0.1.0",
+  "description": "ponyfill to import some incompatible umd scripts in module/worker",
+  "author": "Fuwei Chin",
+  "license": "MIT",
+  "main": "import.js",
+  "scripts": {
+    "testas": "node scripts/server.js"
+  },
+  "devDependencies": {
+    "connect-history-api-fallback": "^1.6.0",
+    "express": "^4.17.1"
+  },
+  "optionalDependencies": {
+    "js-untar": "^2.0.0",
+    "pako": "^1.0.11",
+    "wasm-flate": "^1.0.2-browser"
+  },
+  "files": [
+    "README.md",
+    "LICENSE",
+    "import.js",
+    "import-scripts.js"
+  ],
+  "dependencies": {
+    "vue": "^2.6.12",
+    "vue-class-component": "^7.2.5"
+  }
+}
