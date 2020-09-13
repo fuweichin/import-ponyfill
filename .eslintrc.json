@@ -63,7 +63,6 @@
     // anti-bug
     "eqeqeq": [2, "always", {"null": "ignore"}],
     "array-callback-return": 2,
-    "consistent-return": 2,
-    "consistent-this": [1, "that"]
+    "consistent-return": 2
   }
 }

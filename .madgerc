@@ -1,9 +1,0 @@
-{
-  "fileExtensions": [".js"],
-  "fontName": "Consolas",
-  "fontSize": "12px",
-  "backgroundColor": "#ffffff",
-  "nodeShape": "box",
-  "nodeStyle": "rounded",
-  "nodeColor": "#c6c5fe"
-}

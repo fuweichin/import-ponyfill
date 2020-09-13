@@ -6,7 +6,7 @@ Loading incompatible UMD scripts for browser `module` and `worker`.
 
 ### Why you need it
 
-Some lib scripts throw errors in `ES module ` or `web worker` environments because of specific/deprecated UMD wrappers, which is fixedly using `this` or `window` to access the global object.  Thus you need another mechanism 
+Some lib scripts throw errors in `ES module ` or `web worker` environments because of specific/deprecated UMD wrappers, which is fixedly using `this` or `window` to access the global object.  Thus you need another mechanism to load these scripts.
 
 
 
@@ -22,10 +22,14 @@ Some lib scripts throw errors in `ES module ` or `web worker` environments becau
 
 If `import './some.umd.js'`  throws error, try `importSync('./some.umd.js')`
 
-<del>`import './some.umd.js'; /* global Some */`</del>
+```js
+// import './some.umd.js'; /* global Some */
 
-<ins>`import {importSync} from '/node_modules/import-ponyfill/import.js';`</ins>
-<ins>`importSync('./some.umd.js'); /* global Some */`</ins>
+import {importSync} from '/node_modules/import-ponyfill/import.js';
+importSync('./some.umd.js'); /* global Some */
+```
+
+
 
 or  if `import('./some.umd.js')`  rejects with an error,
 
